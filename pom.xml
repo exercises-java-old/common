@@ -10,7 +10,8 @@
 
     <modules>
 <!--        <module>common-api</module>  -->
-        <module>common-component</module>
+        <module>common-domain</module>
+        <module>common-test</module>
     </modules>
 
     <properties>
@@ -248,8 +249,47 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            
+             <!--
+                Project
+            -->
+            <dependency>
+                <groupId>com.lexicon</groupId>
+                <artifactId>common-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+             <dependency>
+                <groupId>com.lexicon</groupId>
+                <artifactId>common-test-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.so4it.sugar</groupId>
+                <artifactId>${mongodb.dependency.management.artifact.id}</artifactId>
+                <version>${platform.dependency.management.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
         </dependencies>
     </dependencyManagement>
+
+	<dependencies>
+        <dependency>
+            <groupId>com.so4it.sugar</groupId>
+            <artifactId>${platform.provided.dependencies.artifact.id}</artifactId>
+            <version>${platform.provided.dependencies.version}</version>
+            <type>pom</type>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.so4it.sugar</groupId>
+            <artifactId>platform-required-logging-dependencies</artifactId>
+            <version>${platform.dependency.management.version}</version>
+            <scope>compile</scope>
+            <type>pom</type>
+        </dependency>
+    </dependencies>
 
     <build>
         <extensions>
