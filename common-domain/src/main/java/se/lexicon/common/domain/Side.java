@@ -1,4 +1,4 @@
-package se.lexicon.common.component.domain;
+package se.lexicon.common.domain;
 
 public enum Side {
     BUY, SELL

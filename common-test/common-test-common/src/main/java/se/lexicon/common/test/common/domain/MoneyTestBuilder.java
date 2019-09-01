@@ -1,8 +1,8 @@
-package se.lexicon.common.component.test.common.domain;
+package se.lexicon.common.test.common.domain;
 
 import com.so4it.common.util.object.Required;
 import com.so4it.test.domain.AbstractTestBuilder;
-import se.lexicon.common.component.domain.Money;
+import se.lexicon.common.domain.Money;
 
 import java.math.BigDecimal;
 import java.util.Currency;

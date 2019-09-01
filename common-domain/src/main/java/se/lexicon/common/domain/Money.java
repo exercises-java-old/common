@@ -1,4 +1,4 @@
-package se.lexicon.common.component.domain;
+package se.lexicon.common.domain;
 
 import com.so4it.common.domain.DomainClass;
 import com.so4it.common.util.object.Required;

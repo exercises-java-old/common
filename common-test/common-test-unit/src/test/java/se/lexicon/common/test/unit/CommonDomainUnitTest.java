@@ -1,4 +1,4 @@
-package se.lexicon.common.component.test.unit;
+package se.lexicon.common.test.unit;
 
 import com.so4it.serialization.jackson.ObjectMapperFactory;
 import com.so4it.test.builder.domain.DomainMatchers;
@@ -10,7 +10,7 @@ import org.junit.experimental.categories.Category;
 @Category(UnitTest.class)
 public class CommonDomainUnitTest {
 
-    private static final String PACKAGE_NAME = "se.lexicon.common.component.test.common.domain";
+    private static final String PACKAGE_NAME = "se.lexicon.common.test.common.domain";
 
     @Test
     public void testDomainCompliance() {
